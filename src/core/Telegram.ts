@@ -30,6 +30,16 @@ class TelegramCore {
         return this.webApp?.initDataUnsafe;
     }
 
+    /** Telegram theme parameters */
+    get themeParams(): Record<string, string> | undefined {
+        return this.webApp?.themeParams;
+    }
+
+    /** Returns raw Telegram WebApp instance */
+    getWebApp(): any | undefined {
+        return this.webApp;
+    }
+
     /** Telegram WebApp instance */
     get instance(): any | undefined {
         return this.webApp;
